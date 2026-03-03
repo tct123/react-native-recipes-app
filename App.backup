@@ -1,4 +1,4 @@
-import AppContainer from './src/navigations/AppNavigation';
+import AppContainer from './src1/navigations/AppNavigation';
 
 export default function App() {
   return (
