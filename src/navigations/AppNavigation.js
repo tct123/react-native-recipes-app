@@ -24,8 +24,8 @@ function MainNavigator() {
       }}
     >
       <Stack.Screen name='Home' component={HomeScreen} />
-      <Stack.Screen name='Categories' component={CategoriesScreen}/>
-      <Stack.Screen name='Recipe' component={RecipeScreen}/>
+      <Stack.Screen name='Categories' component={CategoriesScreen} />
+      <Stack.Screen name='Recipe' component={RecipeScreen} />
       <Stack.Screen name='RecipesList' component={RecipesListScreen} />
       <Stack.Screen name='Ingredient' component={IngredientScreen} />
       <Stack.Screen name='Search' component={SearchScreen} />
@@ -42,10 +42,10 @@ function DrawerStack() {
       screenOptions={{
         headerShown: false,
         drawerStyle: {
-          width: 250, 
+          width: 250,
         },
       }}
-      drawerContent={({navigation}) => <DrawerContainer navigation={navigation}/>}
+      drawerContent={({ navigation }) => <DrawerContainer navigation={navigation} />}
     >
       <Drawer.Screen name='Main' component={MainNavigator} />
     </Drawer.Navigator>
@@ -55,7 +55,7 @@ function DrawerStack() {
 export default function AppContainer() {
   return (
     <NavigationContainer>
-      <DrawerStack/>
+      <DrawerStack />
     </NavigationContainer>
   );
 }

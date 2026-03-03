@@ -40,7 +40,7 @@ export default function RecipeScreen(props) {
       ),
       headerRight: () => <View />,
     });
-  }, []);
+  }, [navigation]);
 
   const renderImage = ({ item }) => (
     <TouchableHighlight>

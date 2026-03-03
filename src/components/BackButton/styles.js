@@ -5,9 +5,9 @@ const styles = StyleSheet.create({
   btnContainer: {
     alignItems: "center",
     justifyContent: "center",
-    borderRadius: 20, 
-    padding: 10, 
-    margin: 8, 
+    borderRadius: 20,
+    padding: 10,
+    margin: 8,
     backgroundColor: "white",
     shadowColor: "#000",
     shadowOffset: {
@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     elevation: 3,
   },
   btnIcon: {
-    height: 20, 
+    height: 20,
     width: 20,
   },
 });
