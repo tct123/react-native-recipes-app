@@ -10,18 +10,18 @@ const styles = StyleSheet.create({
     height: 14,
     width: 14,
   },
-  searchContainer: { 
-    flexDirection: "row", 
-    alignItems: "center", 
-    backgroundColor: "#EDEDED", 
-    borderRadius: 10, 
+  searchContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "#EDEDED",
+    borderRadius: 10,
     width: 250,
     justifyContent: "space-around"
   },
-  searchIcon: { 
-    width: 20, 
-    height: 20, 
-    tintColor: 'grey' 
+  searchIcon: {
+    width: 20,
+    height: 20,
+    tintColor: 'grey'
   },
   searchInput: {
     backgroundColor: "#EDEDED",

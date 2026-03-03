@@ -29,25 +29,25 @@ export default function SearchScreen(props) {
             value={value}
           />
           <Pressable onPress={() => handleSearch("")}>
-          <Image style={styles.searchIcon} source={require("../../../assets/icons/close.png")} />
+            <Image style={styles.searchIcon} source={require("../../../assets/icons/close.png")} />
           </Pressable>
         </View>
       ),
       headerRight: () => <View />,
     });
-  }, [value]);
+  }, [navigation, value]);
 
-  useEffect(() => {}, [value]);
+  useEffect(() => { }, [value]);
 
   const handleSearch = (text) => {
     setValue(text);
-    var recipeArray1 = getRecipesByRecipeName(text);
-    var recipeArray2 = getRecipesByCategoryName(text);
-    var recipeArray3 = getRecipesByIngredientName(text);
-    var aux = recipeArray1.concat(recipeArray2);
-    var recipeArray = [...new Set(aux)];
+    let recipeArray1 = getRecipesByRecipeName(text);
+    let recipeArray2 = getRecipesByCategoryName(text);
+    let recipeArray3 = getRecipesByIngredientName(text);
+    let aux = recipeArray1.concat(recipeArray2);
+    let recipeArray = [...new Set(aux)];
 
-    if (text == "") {
+    if (text === "") {
       setData([]);
     } else {
       setData(recipeArray);
