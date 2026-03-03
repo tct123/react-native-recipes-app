@@ -25,7 +25,7 @@ export default function CategoriesScreen(props) {
       ),
       headerRight: () => <View />,
     });
-  }, []);
+  }, [navigation]);
 
   const onPressCategory = (item) => {
     const title = item.name;

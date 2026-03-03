@@ -14,7 +14,7 @@ export default function RecipesListScreen(props) {
       title: route.params?.title,
       headerRight: () => <View />,
     });
-  }, []);
+  }, [navigation, route.params?.title]);
 
   const onPressRecipe = (item) => {
     navigation.navigate("Recipe", { item });

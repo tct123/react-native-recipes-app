@@ -16,7 +16,7 @@ export default function IngredientsDetailsScreen(props) {
         fontSize: 16,
       },
     });
-  }, []);
+  }, [navigation, route.params?.title]);
 
   const onPressIngredient = (item) => {
     let name = getIngredientName(item.ingredientId);

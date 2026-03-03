@@ -57,24 +57,22 @@ export default function RecipeScreen(props) {
   };
 
 
-  const onPressPagination = (index) =>
-    {
-      slider1Ref.current?.scrollTo({
-        count: index - progress.value,
-        animated: true,
-      })
-    }
-  
+  const onPressPagination = (index) => {
+    slider1Ref.current?.scrollTo({
+      count: index - progress.value,
+      animated: true,
+    })
+  }
+
 
   return (
     <ScrollView style={styles.container}>
       <View style={styles.carouselContainer}>
         <View style={styles.carousel}>
           <Carousel
-              ref={c =>
-              {
-                slider1Ref.current = c
-              }}
+            ref={c => {
+              slider1Ref.current = c
+            }}
             loop={false}
             width={viewportWidth}
             height={viewportWidth}

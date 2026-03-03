@@ -14,7 +14,7 @@ export default function IngredientScreen(props) {
     navigation.setOptions({
       title: route.params?.name,
     });
-  }, []);
+  }, [navigation, route.params?.name]);
 
   const onPressRecipe = (item) => {
     navigation.navigate("Recipe", { item });

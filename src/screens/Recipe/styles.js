@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
     flex: 1
   },
   carouselContainer: {
-    height: 250  
+    height: 250
   },
   carousel: {},
 

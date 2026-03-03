@@ -19,7 +19,7 @@ export default function HomeScreen(props) {
       ),
       headerRight: () => <View />,
     });
-  }, []);
+  }, [navigation]);
 
   const onPressRecipe = (item) => {
     navigation.navigate("Recipe", { item });
